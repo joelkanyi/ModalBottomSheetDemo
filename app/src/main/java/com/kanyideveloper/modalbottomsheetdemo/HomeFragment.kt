@@ -9,19 +9,20 @@ import androidx.navigation.fragment.findNavController
 import com.kanyideveloper.modalbottomsheetdemo.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
-    private lateinit var binding: FragmentHomeBinding
+    private var _binding: FragmentHomeBinding? = null
+    private val binding get() = _binding!!
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        binding = FragmentHomeBinding.inflate(inflater,container,false)
+    ): View {
+        _binding = FragmentHomeBinding.inflate(inflater,container,false)
         val view: View = binding.root
-        binding.buttonOpenBottomSheet.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_bottomSheetFragment)
+
+        return view.apply{
+            binding.buttonOpenBottomSheet.setOnClickListener {
+                findNavController().navigate(R.id.action_homeFragment_to_bottomSheetFragment)
+            }
         }
-
-        return view
     }
-
-
 }
