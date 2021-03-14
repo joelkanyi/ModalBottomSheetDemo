@@ -5,5 +5,5 @@ According to google material design documentation; A bottom sheet is a sheet tha
 ## Demo
 
 <p float="left">
-<img src="screenshots/Screenshot_20210314-112421.png" width=250/>
+<img src="screenshots/Screenshot_20210314-112821.png" width=250/>
   </p>
