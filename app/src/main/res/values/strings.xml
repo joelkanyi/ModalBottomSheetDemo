@@ -2,4 +2,8 @@
     <string name="app_name">ModalBottomSheetDemo</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_bottom_sheet">Open Bottom Sheet</string>
+    <string name="copy_link">Copy Link</string>
+    <string name="edit">Edit</string>
+    <string name="share">Share</string>
 </resources>
